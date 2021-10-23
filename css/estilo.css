@@ -121,6 +121,65 @@ ul li {
 }
 
 
+/* ------------- Mobile (Menu) -------------*/
+
+#menu-mobile {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    .titulo img,
+    .col-md-3 {
+        transform: scale(.9);
+    }
+    .btn-warning {
+        width: 50% !important;
+    }
+    /* Barra de pesquisa e logo */
+    #menu-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #Banner {
+        display: none;
+    }
+    .submenu {
+        display: none;
+    }
+    #cabecalho .icones {
+        display: none;
+    }
+    #LogoLoja {
+        text-align: center;
+    }
+    #cabecalho form {
+        justify-content: center;
+        padding-top: 10px;
+    }
+     ::-webkit-input-placeholder {
+        font-size: .8rem;
+    }
+    /* Ícones do menu mobile */
+    .icones-mobile {
+        transform: scale(.8);
+        width: 70%;
+    }
+    #menu-mobile .navbar {
+        width: 30%;
+    }
+    /* Sobre nós */
+    #sobre img {
+        display: none;
+    }
+}
+
+
 /* Ícone para subir a tela */
 
 .botao-subir {
